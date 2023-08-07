@@ -2,21 +2,44 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.background-canvas-component {
+  position: absolute;
+  z-index: 0;
 }
 
+@font-face {
+  font-family: ttnormspro-light;
+  src: url(./font/TT\ Norms\ Pro\ Light.otf);
+}
 
+@font-face {
+  font-family: ttnormspro-extralight;
+  src: url(./font/TT\ Norms\ Pro\ ExtraLight.otf);
+}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.content {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: visible;
+}
+
+.header {
+  position: relative; 
+  top: 3em;
   color: white;
+  font: 3em "ttnormspro-light", sans-serif;
+}
+
+.main-statement {
+  position: relative;
+  top: 10em;
+  color: white;
+  font: 1.5em "ttnormspro-extralight", sans-serif;
+  /* line spacing  */
+  line-height: 2em;
 }
 
