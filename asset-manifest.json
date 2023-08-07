@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.d0753a41.css",
-    "main.js": "/static/js/main.e82b2d87.js",
+    "main.css": "/static/css/main.ba044ee6.css",
+    "main.js": "/static/js/main.a6f13e36.js",
     "static/js/787.6568e1bc.chunk.js": "/static/js/787.6568e1bc.chunk.js",
-    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/TT Norms Pro Light.otf": "/static/media/TT Norms Pro Light.0371b80fb8b8fa87e43f.otf",
+    "static/media/TT Norms Pro ExtraLight.otf": "/static/media/TT Norms Pro ExtraLight.f09c9bd9c9cda1ea9473.otf",
     "index.html": "/index.html",
-    "main.d0753a41.css.map": "/static/css/main.d0753a41.css.map",
-    "main.e82b2d87.js.map": "/static/js/main.e82b2d87.js.map",
+    "main.ba044ee6.css.map": "/static/css/main.ba044ee6.css.map",
+    "main.a6f13e36.js.map": "/static/js/main.a6f13e36.js.map",
     "787.6568e1bc.chunk.js.map": "/static/js/787.6568e1bc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d0753a41.css",
-    "static/js/main.e82b2d87.js"
+    "static/css/main.ba044ee6.css",
+    "static/js/main.a6f13e36.js"
   ]
 }
