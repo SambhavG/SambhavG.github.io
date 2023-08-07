@@ -3,12 +3,12 @@ import BackgroundCanvas from "./BackgroundCanvas";
 
 function App() {
   return (
-    <div>
-      <BackgroundCanvas class="background-canvas-component" />
-      <div class="content">
-        <div class="header">Sambhav Gupta</div>
+    <div className="app" id="app">
+      <BackgroundCanvas className="background-canvas-component" />
+      <div className="content">
+        <div className="header">Sambhav Gupta</div>
 
-        <div class="main-statement">
+        <div className="main-statement">
           Hello, I'm Sambhav. <br />
           I'm a student, software engineer, and ML enthusiast. <br />I study math, computer science, and machine
           learning at Stanford. <br />
