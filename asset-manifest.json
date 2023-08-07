@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.ba044ee6.css",
-    "main.js": "/static/js/main.a6f13e36.js",
+    "main.css": "/static/css/main.dba97d23.css",
+    "main.js": "/static/js/main.19d2703b.js",
     "static/js/787.6568e1bc.chunk.js": "/static/js/787.6568e1bc.chunk.js",
     "static/media/TT Norms Pro Light.otf": "/static/media/TT Norms Pro Light.0371b80fb8b8fa87e43f.otf",
     "static/media/TT Norms Pro ExtraLight.otf": "/static/media/TT Norms Pro ExtraLight.f09c9bd9c9cda1ea9473.otf",
     "index.html": "/index.html",
-    "main.ba044ee6.css.map": "/static/css/main.ba044ee6.css.map",
-    "main.a6f13e36.js.map": "/static/js/main.a6f13e36.js.map",
+    "main.dba97d23.css.map": "/static/css/main.dba97d23.css.map",
+    "main.19d2703b.js.map": "/static/js/main.19d2703b.js.map",
     "787.6568e1bc.chunk.js.map": "/static/js/787.6568e1bc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ba044ee6.css",
-    "static/js/main.a6f13e36.js"
+    "static/css/main.dba97d23.css",
+    "static/js/main.19d2703b.js"
   ]
 }
