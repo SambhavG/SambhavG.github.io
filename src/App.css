@@ -17,6 +17,11 @@
   src: url(./font/TT\ Norms\ Pro\ ExtraLight.otf);
 }
 
+@font-face {
+  font-family: spacemono;
+  src: url(./font/SpaceMono-Regular.ttf);
+}
+
 .content {
   position: absolute;
   z-index: 1;
