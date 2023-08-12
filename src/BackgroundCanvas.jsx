@@ -11,13 +11,26 @@ function BackgroundCanvas({ stopDots }) {
       setWidth(window.innerWidth);
       setHeight(window.innerHeight);
     });
-    console.log("effect");
-    runCanvasAnimation(width, height, stopDots);
+    if (!stopDots) {
+      runCanvasAnimation(width, height);
+    }
   }, [width, height, stopDots]);
+
+  const backgroundStyle = {
+    position: "absolute",
+    top: 0,
+    left: 0,
+    width: "100%",
+    height: "100%",
+    zIndex: -2,
+    backgroundColor: "#0F0F0F",
+  };
 
   return (
     <>
-      <canvas id="background-canvas"></canvas>
+      <div style={backgroundStyle} id="background-canvas-container">
+        {!stopDots && <canvas id="background-canvas" style={{ zIndex: -1 }} />}
+      </div>
     </>
   );
 }

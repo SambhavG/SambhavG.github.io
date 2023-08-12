@@ -4,7 +4,6 @@
 
 .background-canvas-component {
   position: absolute;
-  z-index: 0;
 }
 
 @font-face {

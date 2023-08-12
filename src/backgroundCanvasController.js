@@ -1,4 +1,4 @@
-function runCanvasAnimation(width, height, stopDots) {
+function runCanvasAnimation(width, height) {
   var dots = [];
   var numDots = 100;
 
@@ -90,10 +90,6 @@ function runCanvasAnimation(width, height, stopDots) {
     //(30, 30, 30) background
     canvasInput.fillStyle = `rgb(${backgroundShade}, ${backgroundShade}, ${backgroundShade})`;
     canvasInput.fillRect(0, 0, canvasWidth, canvasHeight);
-
-    if (stopDots) {
-      return;
-    }
 
     for (var i = 0; i < dots.length; i++) {
       dots[i].update(mousex, mousey, canvasWidth, canvasHeight);
