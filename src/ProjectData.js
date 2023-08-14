@@ -4,7 +4,7 @@ const ProjectData = [
     content: [
       {
         title: "CourseCorrect",
-        description: "Fully automatic Stanford course planner (drag and drop website version in progress)",
+        description: "Fully automatic Stanford course planner (D-n-D website version coming soon)",
         type: "Project",
         link: "https://docs.google.com/spreadsheets/d/1X9iY5XCuGhKlC7naAwh5V8DXgcBuF_0CDZb-c86GeY8/edit?usp=sharing",
         image: process.env.PUBLIC_URL + "/image_ship.jpg",
@@ -18,7 +18,7 @@ const ProjectData = [
       },
       {
         title: "Tetris",
-        description: "A Processing (Java) implementation of classic Tetris (download to play)",
+        description: "A Processing (Java) implementation of classic Tetris",
         type: "Project",
         link: "https://github.com/SambhavG/Classic-Tetris",
         image: process.env.PUBLIC_URL + "/image_tetris.jpg",
