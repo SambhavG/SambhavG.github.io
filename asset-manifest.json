@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.255d63aa.css",
-    "main.js": "/static/js/main.d0fd79ea.js",
+    "main.css": "/static/css/main.9eb585c8.css",
+    "main.js": "/static/js/main.d7b7cc8f.js",
     "static/js/787.6568e1bc.chunk.js": "/static/js/787.6568e1bc.chunk.js",
     "static/media/TT Norms Pro ExtraBold.otf": "/static/media/TT Norms Pro ExtraBold.4f22acffd50c462d337a.otf",
     "static/media/TT Norms Pro Bold.otf": "/static/media/TT Norms Pro Bold.b3d2a1611bdbcb6bec24.otf",
@@ -10,12 +10,12 @@
     "static/media/TT Norms Pro ExtraLight.otf": "/static/media/TT Norms Pro ExtraLight.f09c9bd9c9cda1ea9473.otf",
     "static/media/SpaceMono-Regular.ttf": "/static/media/SpaceMono-Regular.8a2aa304d0bd5e41d186.ttf",
     "index.html": "/index.html",
-    "main.255d63aa.css.map": "/static/css/main.255d63aa.css.map",
-    "main.d0fd79ea.js.map": "/static/js/main.d0fd79ea.js.map",
+    "main.9eb585c8.css.map": "/static/css/main.9eb585c8.css.map",
+    "main.d7b7cc8f.js.map": "/static/js/main.d7b7cc8f.js.map",
     "787.6568e1bc.chunk.js.map": "/static/js/787.6568e1bc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.255d63aa.css",
-    "static/js/main.d0fd79ea.js"
+    "static/css/main.9eb585c8.css",
+    "static/js/main.d7b7cc8f.js"
   ]
 }
