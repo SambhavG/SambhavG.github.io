@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.88bc918c.css",
-    "main.js": "/static/js/main.789f95ce.js",
+    "main.js": "/static/js/main.0fdb53d3.js",
     "static/js/787.6568e1bc.chunk.js": "/static/js/787.6568e1bc.chunk.js",
     "static/media/TT Norms Pro ExtraBold.otf": "/static/media/TT Norms Pro ExtraBold.4f22acffd50c462d337a.otf",
     "static/media/TT Norms Pro Bold.otf": "/static/media/TT Norms Pro Bold.b3d2a1611bdbcb6bec24.otf",
@@ -11,11 +11,11 @@
     "static/media/SpaceMono-Regular.ttf": "/static/media/SpaceMono-Regular.8a2aa304d0bd5e41d186.ttf",
     "index.html": "/index.html",
     "main.88bc918c.css.map": "/static/css/main.88bc918c.css.map",
-    "main.789f95ce.js.map": "/static/js/main.789f95ce.js.map",
+    "main.0fdb53d3.js.map": "/static/js/main.0fdb53d3.js.map",
     "787.6568e1bc.chunk.js.map": "/static/js/787.6568e1bc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.88bc918c.css",
-    "static/js/main.789f95ce.js"
+    "static/js/main.0fdb53d3.js"
   ]
 }
