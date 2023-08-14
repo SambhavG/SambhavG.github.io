@@ -1,9 +1,14 @@
-.app {
-  text-align: center;
+html, body {
+  background-color: #0F0F0F;
+  margin: 0rem;
+  overflow-x: hidden;
 }
 
-.background-canvas-component {
+.app {
   position: absolute;
+  width: 100%;
+  min-height: 100%;
+  display: inline-block;
 }
 
 @font-face {
@@ -17,6 +22,21 @@
 }
 
 @font-face {
+  font-family: ttnormspro-regular;
+  src: url(./font/TT\ Norms\ Pro\ Regular.otf);
+}
+
+@font-face {
+  font-family: ttnormspro-bold;
+  src: url(./font/TT\ Norms\ Pro\ Bold.otf);
+}
+
+@font-face {
+  font-family: ttnormspro-extrabold;
+  src: url(./font/TT\ Norms\ Pro\ ExtraBold.otf);
+}
+
+@font-face {
   font-family: spacemono;
   src: url(./font/SpaceMono-Regular.ttf);
 }
@@ -24,26 +44,65 @@
 .content {
   position: absolute;
   z-index: 1;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 100%;
   pointer-events: visible;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+content > * {
+  position: relative;
+  width: 100%;
 }
 
 .header {
-  position: relative; 
-  top: 3em;
-  color: white;
-  font: 3em "ttnormspro-light", sans-serif;
+  font: 3em "ttnormspro-bold", sans-serif;
 }
 
 .main-statement {
-  position: relative;
-  top: 10em;
-  color: white;
-  font: 1.5em "ttnormspro-extralight", sans-serif;
-  /* line spacing  */
+  font: 1.5em "ttnormspro-regular", sans-serif;
   line-height: 2em;
+  text-align: center;
+  margin: 0 .5em;
 }
 
+.socials {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+
+.socials a {
+  color: white;
+  width: 3em;
+  height: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icon {
+  font-size: 2em;
+  transition: all 0.5s ease;
+}
+
+.social-icon:hover {
+  font-size: 10em;
+}
+
+.projects-container {
+  position: relative;
+  width: 100%;
+  display: flex; /* Use flexbox */
+  justify-content: flex-start; /* Align items horizontally in the center */
+  align-items: center; /* Align items vertically in the center */
+  overflow: hidden; /* Hide overflowing content */
+  flex-grow: 1; /* Allow the container to grow to fill available space */
+}
+
+.drag-statement {
+  font: 1.5em "ttnormspro-regular", sans-serif;
+  line-height: 2em;
+}

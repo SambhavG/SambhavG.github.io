@@ -35,7 +35,7 @@ function runCanvasAnimation(width, height) {
       this.yspeed /= mag;
     }
 
-    update(mousex, mousey, canvasWidth, canvasHeight) {
+    update(mousex, mousey, canvasWidth, canvasHeight, pageFocused) {
       if (this.x <= 0 || this.x >= canvasWidth) {
         this.xspeed *= -1;
       }
@@ -47,7 +47,7 @@ function runCanvasAnimation(width, height) {
       var xspeedVal = this.xspeed;
       var yspeedVal = this.yspeed;
 
-      if (dist(mousex, mousey, this.x, this.y) < mouseCaptureDistance) {
+      if (dist(mousex, mousey, this.x, this.y) < mouseCaptureDistance && pageFocused) {
         var theDist = dist(mousex, mousey, this.x, this.y);
         var xdiff = this.x - mousex;
         var ydiff = this.y - mousey;
@@ -82,7 +82,7 @@ function runCanvasAnimation(width, height) {
     }
   }
 
-  function onUpdate(dots, mousex, mousey, canvasInput) {
+  function onUpdate(dots, mousex, mousey, canvasInput, pageFocused) {
     var canvasWidth = canvasInput.canvas.width;
     var canvasHeight = canvasInput.canvas.height;
 
@@ -92,7 +92,7 @@ function runCanvasAnimation(width, height) {
     canvasInput.fillRect(0, 0, canvasWidth, canvasHeight);
 
     for (var i = 0; i < dots.length; i++) {
-      dots[i].update(mousex, mousey, canvasWidth, canvasHeight);
+      dots[i].update(mousex, mousey, canvasWidth, canvasHeight, pageFocused);
 
       dots[i].display(canvasInput);
     }
@@ -126,6 +126,7 @@ function runCanvasAnimation(width, height) {
 
   var mouseX = 0;
   var mouseY = 0;
+  var pageFocused = true;
 
   var canvas = document.getElementById("background-canvas");
   var app = document.getElementById("app");
@@ -137,14 +138,26 @@ function runCanvasAnimation(width, height) {
     mouseY = Math.round(e.clientY - cRect.top);
   });
 
+  app.addEventListener("touchmove", function (e) {
+    var cRect = canvas.getBoundingClientRect();
+    mouseX = Math.round(e.touches[0].clientX - cRect.left);
+    mouseY = Math.round(e.touches[0].clientY - cRect.top);
+  });
+
+  window.addEventListener("focus", function () {
+    pageFocused = true;
+  });
+
+  window.addEventListener("blur", function () {
+    pageFocused = false;
+  });
+
   function draw() {
-    onUpdate(dots, mouseX, mouseY, ctx);
+    onUpdate(dots, mouseX, mouseY, ctx, pageFocused);
     requestAnimationFrame(draw);
   }
 
   function setup() {
-    //canvas.width = window.innerWidth;
-    //canvas.height = window.innerHeight;
     canvas.width = width;
     canvas.height = height;
 
