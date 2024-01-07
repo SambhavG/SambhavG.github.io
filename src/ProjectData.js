@@ -4,9 +4,9 @@ const ProjectData = [
     content: [
       {
         title: "CourseCorrect",
-        description: "Fully automatic Stanford course planner (D-n-D website version coming soon)",
+        description: "Drag and drop 5 year course planner with degree verification",
         type: "Project",
-        link: "https://docs.google.com/spreadsheets/d/1X9iY5XCuGhKlC7naAwh5V8DXgcBuF_0CDZb-c86GeY8/edit?usp=sharing",
+        link: "https://sambhavg.github.io/coursecorrect",
         image: process.env.PUBLIC_URL + "/image_ship.jpg",
       },
       {
@@ -46,7 +46,7 @@ const ProjectData = [
     ],
   },
   {
-    type: "Work",
+    type: "Experience",
     content: [
       {
         title: "Amazon SDE Intern",

@@ -46,7 +46,7 @@ const Carousel = () => {
       const images = track.getElementsByClassName("project-image");
       // Map nextPercentage from [negativePercentage, 0] to [-100, 0]
       const imageScrollAmount = (nextPercentage * -100) / negativePercentage;
-      const effectReduce = 0.2;
+      const effectReduce = 0.8;
       for (const image of images) {
         image.animate(
           {
