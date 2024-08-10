@@ -22,7 +22,7 @@ function App() {
         <Spacer height="4em" />
         <div className="main-statement">
           I study math, computer science, and machine learning at Stanford <br />
-          I've worked at Amazon, The Amherst Group, and a contech startup
+          I've worked at Samsung Semiconductor, Amazon, The Amherst Group, and a contech startup
         </div>
         <Spacer height="2em" />
         <div className="socials">

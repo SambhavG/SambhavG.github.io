@@ -35,7 +35,8 @@
 .project-title {
   min-height: 4em;
   font-size: 2em;
-  font-family: "ttnormspro-bold", sans-serif;
+  font-weight: 1000;
+  font-family: "Roboto", sans-serif;
   text-align: center;
   display: flex;
   align-items: center;
@@ -45,8 +46,8 @@
 
 .project-description {
   font-size: 1.5em;
-  font-weight: 1000;
-  font-family: "ttnormspro-light", sans-serif;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
   text-align: center;
   text-shadow: 0 0 40px black;
   padding: 0 1em;
