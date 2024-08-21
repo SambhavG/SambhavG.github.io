@@ -34,12 +34,12 @@ content > * {
 }
 
 .header {
-  font: 3em "Roboto", sans-serif;
+  font: 3em "Outfit", sans-serif;
   font-weight: 800;
 }
 
 .main-statement {
-  font: 1.5em "Roboto", sans-serif;
+  font: 1.5em "Outfit", sans-serif;
   line-height: 2em;
   text-align: center;
   margin: 0 .5em;
