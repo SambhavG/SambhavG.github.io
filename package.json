@@ -44,8 +44,6 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@designthen/svelte-icons": "^5.0.0-next.1",
-		"@icons-pack/svelte-simple-icons": "^3.0.0",
 		"bits-ui": "^0.21.13",
 		"clsx": "^2.1.1",
 		"lucide-svelte": "^0.429.0",
