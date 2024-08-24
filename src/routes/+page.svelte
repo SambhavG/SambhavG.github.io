@@ -25,7 +25,7 @@
 				name: 'Bobyard',
 				description: 'Contech startup Principal Engineer. Startup raised $3.5M seed from Primary',
 				image: 'images/image_construction.jpg',
-				link: 'bobyard.com'
+				link: 'https://bobyard.com'
 			},
 			{
 				name: 'Amherst Group',
@@ -102,7 +102,7 @@
 	</div> -->
 
 	<div class="grid h-20 w-72 grid-cols-5 items-center justify-around pt-6">
-		<a href="/Resume July 2023-5.pdf" target="_blank" rel="noreferrer">
+		<a href="/Resume_Sambhav_Gupta.pdf" target="_blank" rel="noreferrer">
 			<FileText size={iconSize} />
 		</a>
 		<a href="https://github.com/sambhavg" target="_blank" rel="noreferrer">
