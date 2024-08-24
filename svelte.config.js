@@ -15,9 +15,11 @@ const config = {
 		adapter: adapter(),
 		paths: {
 			base: process.env.NODE_ENV === 'production' ? '' : ''
-		}
-		
-	}
+		},
+		prerender: {
+			handleHttpError: 'warn'
+		},
+	},
 };
 
 export default config;
