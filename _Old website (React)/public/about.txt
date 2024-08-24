@@ -1,6 +1,0 @@
-This favicon was generated using the following font:
-
-- Font Title: Borel
-- Font Author: Copyright 2023 The Borel Project Authors (https://github.com/RosaWagner/Borel)
-- Font Source: http://fonts.gstatic.com/s/borel/v2/6qLOKZsftAPisgshYyMnOjwE.ttf
-- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))
