@@ -90,7 +90,7 @@
 </script>
 
 <div
-	class="flex min-h-screen flex-col items-center justify-start bg-slate-800 text-center text-2xl text-white"
+	class="flex min-h-screen flex-col items-center justify-start bg-slate-800 px-3 text-center text-2xl text-white md:px-0"
 >
 	<div class="pt-12 text-6xl font-bold">Sambhav Gupta</div>
 	<div class="pt-6 font-semibold">
@@ -120,11 +120,11 @@
 	</div>
 
 	<div
-		class="grid w-full grid-cols-1 items-start justify-around px-10 pt-6 text-4xl font-semibold lg:grid-cols-3"
+		class="grid w-full grid-cols-1 items-start justify-around pt-6 text-4xl font-semibold md:px-10 lg:grid-cols-3"
 	>
 		{#each Object.keys(data) as category_name}
-			<div class="flex flex-col px-1">
-				<div class="pb-5">{category_name}</div>
+			<div class="flex flex-col md:px-1">
+				<div class="pb-5 pt-10 md:pt-0">{category_name}</div>
 				{#each data[category_name] as item}
 					<div class="pb-2">
 						<Card {...item} />
@@ -136,4 +136,7 @@
 </div>
 
 <style lang="postcss">
+	:root {
+		background-color: #1f2937;
+	}
 </style>

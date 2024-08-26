@@ -21,7 +21,7 @@
 			</h2>
 		</div>
 		<div
-			class="description-text mt-2 text-left text-xl font-light text-white opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100"
+			class="description-text mt-2 pr-5 text-left text-xl font-light text-white opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100"
 		>
 			{description}
 		</div>
