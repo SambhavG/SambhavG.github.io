@@ -8,6 +8,12 @@
 	let data = {
 		Work: [
 			{
+				name: 'Jane Street',
+				description: 'Incoming Quant Trader',
+				image: 'images/image_jane.png',
+				link: 'https://www.janestreet.com/'
+			},
+			{
 				name: 'Samsung Semiconductor',
 				description:
 					'Storage Software Engineer on Memory Solutions Lab (MSL) - Data Fabric Solutions team. Developed software for CXL devices',
