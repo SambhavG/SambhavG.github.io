@@ -9,7 +9,7 @@
 		Work: [
 			{
 				name: 'Jane Street',
-				description: 'Incoming Quant Trader',
+				description: 'Quant Trader Intern',
 				image: 'images/image_jane.png',
 				link: 'https://www.janestreet.com/'
 			},
