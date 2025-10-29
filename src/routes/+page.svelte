@@ -99,10 +99,14 @@
 </script>
 
 <section class="mx-auto w-full max-w-4xl px-6 py-16 md:py-20">
-	<h1 class="text-left text-5xl font-medium tracking-tight text-zinc-900 md:text-6xl">
+	<h1
+		class="text-left text-5xl font-medium tracking-tight text-neutral-900 dark:text-neutral-100 md:text-6xl"
+	>
 		Sambhav Gupta
 	</h1>
-	<p class="mt-4 max-w-2xl text-left text-base leading-relaxed text-zinc-600 md:text-lg">
+	<p
+		class="mt-4 max-w-2xl text-left text-base leading-relaxed text-neutral-600 dark:text-neutral-400 md:text-lg"
+	>
 		I study math, computer science, and machine learning at Stanford
 	</p>
 
@@ -111,7 +115,7 @@
 			href="/Resume_Sambhav_Gupta.pdf"
 			target="_blank"
 			rel="noreferrer"
-			class="inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-white px-4 py-2 text-sm text-zinc-800 transition hover:bg-zinc-50"
+			class="inline-flex items-center gap-2 rounded-full border border-neutral-200 bg-white px-4 py-2 text-sm text-neutral-800 transition hover:bg-neutral-50 dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-100 dark:hover:bg-neutral-800"
 		>
 			<FileText size={iconSize} />
 			<span>Resume</span>
@@ -120,7 +124,7 @@
 			href="https://github.com/sambhavg"
 			target="_blank"
 			rel="noreferrer"
-			class="inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-white px-4 py-2 text-sm text-zinc-800 transition hover:bg-zinc-50"
+			class="inline-flex items-center gap-2 rounded-full border border-neutral-200 bg-white px-4 py-2 text-sm text-neutral-800 transition hover:bg-neutral-50 dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-100 dark:hover:bg-neutral-800"
 		>
 			<Github size={iconSize} />
 			<span>GitHub</span>
@@ -129,7 +133,7 @@
 			href="https://www.linkedin.com/in/sambhav-g/"
 			target="_blank"
 			rel="noreferrer"
-			class="inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-white px-4 py-2 text-sm text-zinc-800 transition hover:bg-zinc-50"
+			class="inline-flex items-center gap-2 rounded-full border border-neutral-200 bg-white px-4 py-2 text-sm text-neutral-800 transition hover:bg-neutral-50 dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-100 dark:hover:bg-neutral-800"
 		>
 			<Linkedin size={iconSize} />
 			<span>LinkedIn</span>
@@ -138,14 +142,14 @@
 			href="https://www.instagram.com/sambhavgupta159/"
 			target="_blank"
 			rel="noreferrer"
-			class="inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-white px-4 py-2 text-sm text-zinc-800 transition hover:bg-zinc-50"
+			class="inline-flex items-center gap-2 rounded-full border border-neutral-200 bg-white px-4 py-2 text-sm text-neutral-800 transition hover:bg-neutral-50 dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-100 dark:hover:bg-neutral-800"
 		>
 			<Instagram size={iconSize} />
 			<span>Instagram</span>
 		</a>
 		<button
 			on:click={() => (window.location.href = 'mailto:samgupta@stanford.edu')}
-			class="inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-white px-4 py-2 text-sm text-zinc-800 transition hover:bg-zinc-50"
+			class="inline-flex items-center gap-2 rounded-full border border-neutral-200 bg-white px-4 py-2 text-sm text-neutral-800 transition hover:bg-neutral-50 dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-100 dark:hover:bg-neutral-800"
 		>
 			<Mail size={iconSize} strokeWidth={2} />
 			<span>Email</span>
@@ -154,8 +158,12 @@
 
 	<div class="mt-8">
 		{#each categories as category_name, i}
-			<div class="flex flex-col border-t border-zinc-100 pt-8 first:border-0 first:pt-0">
-				<div class="mb-0 text-[15px] font-medium uppercase tracking-[0.18em] text-zinc-900">
+			<div
+				class="flex flex-col border-t border-neutral-100 pt-8 first:border-0 first:pt-0 dark:border-neutral-800"
+			>
+				<div
+					class="mb-0 text-[15px] font-medium uppercase tracking-[0.18em] text-neutral-900 dark:text-neutral-100"
+				>
 					{category_name}
 				</div>
 				<div>
@@ -164,15 +172,17 @@
 							href={item.link}
 							target="_blank"
 							rel="noreferrer"
-							class="group relative block px-2 py-2 transition-colors hover:text-zinc-900"
+							class="group relative block px-2 py-2 transition-colors hover:text-neutral-900 dark:hover:text-neutral-100"
 						>
 							<div class="min-w-0">
 								<h3
-									class="text-left text-[12px] font-medium uppercase tracking-[0.18em] text-zinc-600"
+									class="text-left text-[12px] font-medium uppercase tracking-[0.18em] text-neutral-600 dark:text-neutral-400"
 								>
 									{item.name}
 								</h3>
-								<p class="mt-1 line-clamp-2 px-4 text-left text-[13px] text-sm text-zinc-600">
+								<p
+									class="mt-1 line-clamp-2 px-4 text-left text-[13px] text-sm text-neutral-600 dark:text-neutral-400"
+								>
 									{item.description}
 								</p>
 							</div>

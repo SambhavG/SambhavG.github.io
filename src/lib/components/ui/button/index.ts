@@ -6,13 +6,13 @@ const buttonVariants = tv({
     base: "ring-offset-background focus-visible:ring-ring inline-flex items-center justify-center whitespace-nowrap rounded-full text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
 	variants: {
 		variant: {
-            default: "bg-zinc-900 text-white hover:bg-zinc-800",
+            default: "bg-neutral-900 text-white hover:bg-neutral-800",
             destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90",
             outline:
-                "border border-zinc-200 bg-white text-zinc-900 hover:bg-zinc-50",
+                "border border-neutral-200 bg-white text-neutral-900 hover:bg-neutral-50",
             secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
-            ghost: "hover:bg-zinc-50 text-zinc-900",
-            link: "text-zinc-900 underline-offset-4 hover:underline",
+            ghost: "hover:bg-neutral-50 text-neutral-900",
+            link: "text-neutral-900 underline-offset-4 hover:underline",
 		},
 		size: {
             default: "h-9 px-4",

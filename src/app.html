@@ -9,6 +9,25 @@
 		<link rel="icon" type="image/png" sizes="16x16" href="%sveltekit.assets%/favicon-16x16.png">
 		<link rel="manifest" href="%sveltekit.assets%/site.webmanifest">
 
+		<script>
+			// Initialize theme before the app renders to avoid FOUC
+			(function () {
+				try {
+					var stored = localStorage.getItem('theme');
+					var systemPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+					var isDark = stored ? stored === 'dark' : systemPrefersDark;
+					var root = document.documentElement;
+					if (isDark) {
+						root.classList.add('dark');
+					} else {
+						root.classList.remove('dark');
+					}
+				} catch (_) {
+					/* no-op */
+				}
+			})();
+		</script>
+
 		<!-- fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
