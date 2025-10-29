@@ -107,7 +107,7 @@
 	<p
 		class="mt-4 max-w-2xl text-left text-base leading-relaxed text-neutral-600 dark:text-neutral-400 md:text-lg"
 	>
-		I study math, computer science, and machine learning at Stanford
+		Math, CS, and ML at Stanford
 	</p>
 
 	<div class="mt-8 flex flex-wrap items-center gap-3">
