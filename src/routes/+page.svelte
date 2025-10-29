@@ -5,7 +5,10 @@
 
 	let iconSize = 40;
 
-	let data = {
+	type Item = { name: string; description: string; image: string; link: string };
+	type CategoryName = 'Work' | 'Projects' | 'Publications';
+
+	const data: Record<CategoryName, Item[]> = {
 		Work: [
 			{
 				name: 'Jane Street',
@@ -93,6 +96,8 @@
 			}
 		]
 	};
+
+	const categories: CategoryName[] = ['Work', 'Projects', 'Publications'];
 </script>
 
 <div
@@ -128,7 +133,7 @@
 	<div
 		class="grid w-full grid-cols-1 items-start justify-around pt-6 text-4xl font-semibold md:px-10 lg:grid-cols-3"
 	>
-		{#each Object.keys(data) as category_name}
+		{#each categories as category_name}
 			<div class="flex flex-col md:px-1">
 				<div class="pb-5 pt-10 md:pt-0">{category_name}</div>
 				{#each data[category_name] as item}
