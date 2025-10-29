@@ -1,7 +1,6 @@
 <script lang="ts">
 	// import { Button } from "$lib/components/ui/button";
 	import { FileText, Github, Linkedin, Instagram, Mail } from 'lucide-svelte';
-	import Card from './card.svelte';
 
 	let iconSize = 24;
 
@@ -12,14 +11,13 @@
 		Work: [
 			{
 				name: 'Jane Street',
-				description: 'Quant Trader Intern',
+				description: 'Quant Trader Intern, Options and Commodities',
 				image: 'images/image_jane.png',
 				link: 'https://www.janestreet.com/'
 			},
 			{
 				name: 'Samsung Semiconductor',
-				description:
-					'Storage Software Engineer on Memory Solutions Lab (MSL) - Data Fabric Solutions team. Developed software for CXL devices',
+				description: 'MSL Storage Software Engineer, Data Fabric Solutions team',
 				image: 'images/cxl_2.png',
 				link: 'https://samsungmsl.com/dfs/'
 			},
@@ -97,14 +95,14 @@
 		]
 	};
 
-	const categories: CategoryName[] = ['Work', 'Projects', 'Publications'];
+	const categories: CategoryName[] = ['Publications', 'Projects', 'Work'];
 </script>
 
-<section class="mx-auto w-full max-w-6xl px-6 py-16 md:py-24">
-	<h1 class="text-left text-5xl font-semibold tracking-tight text-zinc-900 md:text-7xl">
+<section class="mx-auto w-full max-w-4xl px-6 py-16 md:py-20">
+	<h1 class="text-left text-5xl font-medium tracking-tight text-zinc-900 md:text-6xl">
 		Sambhav Gupta
 	</h1>
-	<p class="mt-6 max-w-2xl text-left text-lg leading-relaxed text-zinc-600">
+	<p class="mt-4 max-w-2xl text-left text-base leading-relaxed text-zinc-600 md:text-lg">
 		I study math, computer science, and machine learning at Stanford
 	</p>
 
@@ -154,15 +152,31 @@
 		</button>
 	</div>
 
-	<div class="mt-16 grid grid-cols-1 gap-10 md:grid-cols-3">
-		{#each categories as category_name}
-			<div class="flex flex-col">
-				<div class="mb-4 text-xs font-medium uppercase tracking-wider text-zinc-500">
+	<div class="mt-8">
+		{#each categories as category_name, i}
+			<div class="flex flex-col border-t border-zinc-100 pt-8 first:border-0 first:pt-0">
+				<div class="mb-0 text-[15px] font-medium uppercase tracking-[0.18em] text-zinc-900">
 					{category_name}
 				</div>
-				<div class="space-y-3">
+				<div>
 					{#each data[category_name] as item}
-						<Card {...item} />
+						<a
+							href={item.link}
+							target="_blank"
+							rel="noreferrer"
+							class="group relative block px-2 py-2 transition-colors hover:text-zinc-900"
+						>
+							<div class="min-w-0">
+								<h3
+									class="text-left text-[12px] font-medium uppercase tracking-[0.18em] text-zinc-600"
+								>
+									{item.name}
+								</h3>
+								<p class="mt-1 line-clamp-2 px-4 text-left text-[13px] text-sm text-zinc-600">
+									{item.description}
+								</p>
+							</div>
+						</a>
 					{/each}
 				</div>
 			</div>
