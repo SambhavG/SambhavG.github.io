@@ -3,7 +3,7 @@
 	import { FileText, Github, Linkedin, Instagram, Mail } from 'lucide-svelte';
 	import Card from './card.svelte';
 
-	let iconSize = 40;
+	let iconSize = 24;
 
 	type Item = { name: string; description: string; image: string; link: string };
 	type CategoryName = 'Work' | 'Projects' | 'Publications';
@@ -100,54 +100,72 @@
 	const categories: CategoryName[] = ['Work', 'Projects', 'Publications'];
 </script>
 
-<div
-	class="flex min-h-screen flex-col items-center justify-start bg-slate-800 px-3 text-center text-2xl text-white md:px-0"
->
-	<div class="pt-12 text-6xl font-bold">Sambhav Gupta</div>
-	<div class="pt-6 font-semibold">
+<section class="mx-auto w-full max-w-6xl px-6 py-16 md:py-24">
+	<h1 class="text-left text-5xl font-semibold tracking-tight text-zinc-900 md:text-7xl">
+		Sambhav Gupta
+	</h1>
+	<p class="mt-6 max-w-2xl text-left text-lg leading-relaxed text-zinc-600">
 		I study math, computer science, and machine learning at Stanford
-	</div>
-	<!-- <div class="pt-2 font-semibold">
-		I've worked at Samsung Semiconductor, Amazon, Bobyard (a contech startup), and The Amherst Group
-		LLC
-	</div> -->
+	</p>
 
-	<div class="grid h-20 w-72 grid-cols-5 items-center justify-around pt-6">
-		<a href="/Resume_Sambhav_Gupta.pdf" target="_blank" rel="noreferrer">
+	<div class="mt-8 flex flex-wrap items-center gap-3">
+		<a
+			href="/Resume_Sambhav_Gupta.pdf"
+			target="_blank"
+			rel="noreferrer"
+			class="inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-white px-4 py-2 text-sm text-zinc-800 transition hover:bg-zinc-50"
+		>
 			<FileText size={iconSize} />
+			<span>Resume</span>
 		</a>
-		<a href="https://github.com/sambhavg" target="_blank" rel="noreferrer">
-			<Github class="social-icon" size={iconSize} />
+		<a
+			href="https://github.com/sambhavg"
+			target="_blank"
+			rel="noreferrer"
+			class="inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-white px-4 py-2 text-sm text-zinc-800 transition hover:bg-zinc-50"
+		>
+			<Github size={iconSize} />
+			<span>GitHub</span>
 		</a>
-		<a href="https://www.linkedin.com/in/sambhav-g/" target="_blank" rel="noreferrer">
-			<Linkedin class="social-icon" size={iconSize} />
+		<a
+			href="https://www.linkedin.com/in/sambhav-g/"
+			target="_blank"
+			rel="noreferrer"
+			class="inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-white px-4 py-2 text-sm text-zinc-800 transition hover:bg-zinc-50"
+		>
+			<Linkedin size={iconSize} />
+			<span>LinkedIn</span>
 		</a>
-		<a href="https://www.instagram.com/sambhavgupta159/" target="_blank" rel="noreferrer">
-			<Instagram class="social-icon" size={iconSize} />
+		<a
+			href="https://www.instagram.com/sambhavgupta159/"
+			target="_blank"
+			rel="noreferrer"
+			class="inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-white px-4 py-2 text-sm text-zinc-800 transition hover:bg-zinc-50"
+		>
+			<Instagram size={iconSize} />
+			<span>Instagram</span>
 		</a>
-		<button on:click={() => (window.location.href = 'mailto:samgupta@stanford.edu')}>
-			<Mail class="social-icon" size={iconSize} strokeWidth={2} />
+		<button
+			on:click={() => (window.location.href = 'mailto:samgupta@stanford.edu')}
+			class="inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-white px-4 py-2 text-sm text-zinc-800 transition hover:bg-zinc-50"
+		>
+			<Mail size={iconSize} strokeWidth={2} />
+			<span>Email</span>
 		</button>
 	</div>
 
-	<div
-		class="grid w-full grid-cols-1 items-start justify-around pt-6 text-4xl font-semibold md:px-10 lg:grid-cols-3"
-	>
+	<div class="mt-16 grid grid-cols-1 gap-10 md:grid-cols-3">
 		{#each categories as category_name}
-			<div class="flex flex-col md:px-1">
-				<div class="pb-5 pt-10 md:pt-0">{category_name}</div>
-				{#each data[category_name] as item}
-					<div class="pb-2">
+			<div class="flex flex-col">
+				<div class="mb-4 text-xs font-medium uppercase tracking-wider text-zinc-500">
+					{category_name}
+				</div>
+				<div class="space-y-3">
+					{#each data[category_name] as item}
 						<Card {...item} />
-					</div>
-				{/each}
+					{/each}
+				</div>
 			</div>
 		{/each}
 	</div>
-</div>
-
-<style lang="postcss">
-	:root {
-		background-color: #1f2937;
-	}
-</style>
+</section>
