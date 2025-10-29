@@ -16,15 +16,15 @@
 				link: 'https://www.janestreet.com/'
 			},
 			{
-				name: 'Samsung Semiconductor',
-				description: 'MSL Storage Software Engineer, Data Fabric Solutions team',
-				image: 'images/cxl_2.png',
-				link: 'https://samsungmsl.com/dfs/'
+				name: 'Test-Time Training Lab',
+				description:
+					'Researcher, test-time finetuning 7B and 32B transformers on ARC and Lean proofs',
+				image: 'images/image_warehouse.jpg',
+				link: 'https://amazon.com'
 			},
 			{
 				name: 'Amazon',
-				description:
-					'SDE intern on operations team. Developed and deployed internal AWS application',
+				description: 'SDE intern on operations, developed and deployed internal AWS application',
 				image: 'images/image_warehouse.jpg',
 				link: 'https://amazon.com'
 			},
@@ -98,7 +98,7 @@
 	const categories: CategoryName[] = ['Publications', 'Projects', 'Work'];
 </script>
 
-<section class="mx-auto w-full max-w-4xl px-6 py-16 md:py-20">
+<section class="mx-auto w-full max-w-3xl px-6 py-16 md:py-20">
 	<h1
 		class="text-left text-5xl font-medium tracking-tight text-neutral-900 dark:text-neutral-100 md:text-6xl"
 	>
