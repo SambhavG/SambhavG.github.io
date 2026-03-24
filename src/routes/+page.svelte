@@ -43,6 +43,12 @@
 		],
 		Projects: [
 			{
+				name: 'AWS Trainium GNNs and DFlash Speculative Decoding Optimization',
+				description: 'Implemented GNN and DFlash speculative decoding optimization for Trainium2',
+				image: '/images/image_trainium.jpg',
+				link: '/trainium_optimization.pdf'
+			},
+			{
 				name: 'CourseCorrect',
 				description: 'A fully automatic Stanford 5 year course planner',
 				image: '/images/coursecorrect_2.png',
